@@ -2,3 +2,4 @@
 .env
 .phpstorm.meta.php
 _ide_*.php
+database/*.sqlite
