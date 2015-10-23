@@ -12,6 +12,6 @@ php artisan db:seed
 php artisan serve
 ```
 
-Visit [http://localhost:8000](http://localhost:8000) and you cant start traversing the links.
+Visit [http://localhost:8000](http://localhost:8000) and you can start traversing the links.
 
 This project is setup in a way that it expects all routes to be named. This is due to the implementation of the URL Generator used by the HATEOAS package.
