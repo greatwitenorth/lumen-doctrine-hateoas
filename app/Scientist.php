@@ -68,8 +68,9 @@ class Scientist
 	private $theories;
 
 	/**
-	 * @param $firstname
-	 * @param $lastname
+	 * @param   string  $firstname
+	 * @param   string  $lastname
+	 * @param   integer $age
 	 */
 	public function __construct($firstname, $lastname, $age)
 	{
