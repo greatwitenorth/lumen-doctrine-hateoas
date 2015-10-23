@@ -5,13 +5,11 @@ namespace App\Http\Controllers;
 use App\Repositories\TheoryRepository;
 use Illuminate\Http\Request;
 use App\Repositories\ScientistRepository;
-use Doctrine\ORM\EntityManagerInterface;
 
 class ScientistController extends Controller {
 	protected $repository;
 
-	public function __construct( EntityManagerInterface $em, ScientistRepository $repository, TheoryRepository $theories ) {
-		$this->em         = $em;
+	public function __construct( ScientistRepository $repository, TheoryRepository $theories ) {
 		$this->repository = $repository;
 		$this->theories   = $theories;
 	}
