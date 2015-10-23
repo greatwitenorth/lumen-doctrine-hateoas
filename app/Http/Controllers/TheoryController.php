@@ -8,8 +8,7 @@ use App\Repositories\TheoryRepository;
 class TheoryController extends Controller {
 	protected $repository;
 
-	public function __construct( Request $request, TheoryRepository $repository ) {
-		$this->request    = $request;
+	public function __construct( TheoryRepository $repository ) {
 		$this->repository = $repository;
 	}
 
