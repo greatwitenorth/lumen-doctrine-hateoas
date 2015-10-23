@@ -38,10 +38,4 @@ class ScientistController extends Controller {
 		return $this->hateoasResponse( $theories );
 	}
 
-	public function age( Request $request, $age ) {
-		$scientists = $this->repository->age( $age, $request->get( 'per_page', 15 ) );
-
-		return $this->hateoasResponse( $scientists );
-	}
-
 }
